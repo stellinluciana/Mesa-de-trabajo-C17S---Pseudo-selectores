@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Hoja de estilos principal -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- Fuentes  (Google Fonts: Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    
+    <!--  iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Hero-Cards | Inicio</title>
+  </head>
+  <body>
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+      <!-- Barra superior de anuncios -->
+      <div><p class="top-nav">Descuentos 20%</p></div>
+      
+      <!-- Menú de navegación principal -->
+      <div class="menu-nav">
+        <div class="logo">
+          <img src="img/LogoTienda.svg" alt="Logo de la tienda" />
+          <div class="nombre-local">
+            <span class="logo-texto-uno">Nombre Tienda</span>
+          </div>
+        </div>
+        
+        <nav>
+          <ul class="contenedor-menu">
+            <!-- Navegación corregida para vincular con form.html -->
+            <li><a class="menu" href="index.html">Contacto</a></li>
+            <li><a class="menu" href="form.html">Registrarme</a></li>
+            <li><a class="menu" href="#">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <section>
+        <!-- Tarjeta 1: Batman -->
+        <article class="card">
+          <div class="card-encabezado">
+            <img class="img-fondo-card" src="img/BatmanFondo.jpg" alt="Batman Fondo" />
+            <img class="img-heroe" src="img/Batman.png" alt="Foto Batman" />
+            <div class="icon"><i class="fa-solid fa-heart"></i></div>
+          </div>
+          <div class="card-cuerpo">
+            <h2>BATMAN</h2>
+            <p class="card-textos">
+              Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective Comics, Batman y Robin, y
+              Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+            </p>
+            <a class="boton-vermas" href="#">Ver Más</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Harley Quinn -->
+        <article class="card">
+          <div class="card-encabezado">
+            <img class="img-fondo-card" src="img/HarleyFondo.png" alt="Harley Fondo" />
+            <img class="img-heroe" src="img/Harley.png" alt="Foto Harley" />
+            <div class="icon"><i class="fa-solid fa-heart"></i></div>
+          </div>
+          <div class="card-cuerpo">
+            <h2>Harley Quinn</h2>
+            <p class="card-textos">
+              La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor estadounidense Paul Dini para modificar
+              una escena del vigésimo-segundo episodio de Batman: la serie animada.
+            </p>
+            <a class="boton-vermas" href="#">Ver Más</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: Batman -->
+        <article class="card">
+          <div class="card-encabezado">
+            <img class="img-fondo-card" src="img/BatmanFondo.jpg" alt="Batman Fondo" />
+            <img class="img-heroe" src="img/Batman.png" alt="Foto Batman" />
+            <div class="icon"><i class="fa-solid fa-heart"></i></div>
+          </div>
+          <div class="card-cuerpo">
+            <h2>BATMAN</h2>
+            <p class="card-textos">
+              Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman, Detective Comics, Batman y Robin, y
+              Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing.
+            </p>
+            <a class="boton-vermas" href="#">Ver Más</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Botón flotante para agregar elementos -->
+      <div>
+        <a href="form.html" title="Agregar nuevo personaje">
+          <i class="fa-solid fa-circle-plus toptop"></i>
+        </a>
+      </div>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div class="pie-pagina">
+        <span>Todos los derechos reservados a TALLER DE DISEÑO WEB</span>
+        <img src="img/Vector.png" alt="Github" />
+      </div>
+    </footer>
+  </body>
+</html>

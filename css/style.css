@@ -1,0 +1,406 @@
+
+/* Selector universal (*): Resetea márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto total */
+}
+
+/* Estilos para el cuerpo principal del sitio */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía global */
+}
+
+/*BARRA DE NAVEGACIÓN SUPERIOR (TOP NAV)*/
+
+.top-nav {
+    background-color: #1CD1B0; /* Fondo verde agua/turquesa */
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 0px 4px 4px 0px #00000040; /* Sombra inferior */
+    height: 38px;
+}
+
+.menu-nav {
+    box-shadow: 0px 10px 7px 0px #00000040; /* Sombra inferior para el menú */
+    border: 1px solid #000000;
+}
+
+/* Quita las viñetas por defecto de las listas */
+ul li {
+    list-style: none;
+}
+
+/*  PSEUDOSELECTOR (:hover) Aplica estilos cuando el usuario pasa el cursor sobre los elementos de lista del menú nav */
+nav ul li:hover {
+    background-color: rgb(204, 36, 36); /* Fondo rojo al pasar el cursor */
+    padding: 5px;
+}
+
+/* SECCIÓN LOGO Y MENÚ PRINCIPAL*/
+
+.logo {
+    display: flex; /* Centrado flexible de elementos */
+    align-items: center; /* Alinea icono y texto al centro vertical */
+    background-color: #00669F; /* Fondo azul principal */
+}
+
+.nombre-local {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+}
+
+.logo-texto-uno {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+nav {
+    background-color: #001D2D; /* Fondo azul oscuro */
+    padding: 10px;
+}
+
+.menu {
+    text-decoration: none; /* Quita el subrayado a los enlaces */
+    color: #F3F3F3;
+    font-size: 16px;
+}
+
+.contenedor-menu {
+    display: flex;
+    gap: 20px; /* Espaciado uniforme entre los enlaces */
+    flex-wrap: wrap; /* Adapta los botones a varias líneas si no caben */
+    justify-content: flex-end; /* Alinea el menú a la derecha */
+}
+
+/* TITULARES Y SECCIONES*/
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 28px;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    background-color: #00669F;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center; /* Centra el texto del subtítulo */
+}
+
+section {
+    text-align: center;
+    width: 100%;
+}
+
+/* TARJETAS */
+
+.card {
+    display: inline-block; /* Permite colocar varias tarjetas en horizontal */
+    vertical-align: top;
+    width: 300px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    position: relative; /* Contexto de posicionamiento para la imagen héroe */
+    margin: 50px 30px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-encabezado {
+    position: relative;
+    height: 193px;
+}
+
+.img-fondo-card {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 300px;
+    height: 194px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.img-heroe {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Transforma la imagen a forma circular */
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    transform: translate(-50%, 0); /* Centra horizontalmente la foto circular */
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.card-cuerpo {
+    background-color: #F3F3F3;
+    padding: 70px 16px 18px 16px; /* Espacio superior amplio para no tapar la foto circular */
+    text-align: center;
+}
+
+.card-textos {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.icon {
+    color: #CC2424;
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    width: 30px;
+    font-size: 30px;
+}
+
+.boton-vermas {
+    background-color: #00669F;
+    color: #F3F3F3;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 120px;
+    height: 45px;
+    line-height: 50px; /* Centra el texto verticalmente */
+}
+
+/*  PSEUDOSELECTOR (:hover)
+   Aplica estilo al botón "Ver más" al pasar el cursor sobre él */
+.boton-vermas:hover {
+    background-color: #001D2D; /* Oscurece el azul */
+}
+
+/*BOTÓN VOLVER ARRIBA */
+
+.toptop {
+    position: fixed; /* Mantiene el icono flotante en pantalla durante el scroll */
+    bottom: 90px;
+    right: 5px;
+    color: #00669F;
+    font-size: 50px;
+    z-index: 999; /* Asegura que permanezca por encima de todo el contenido */
+}
+
+/* PSEUDOSELECTOR (:hover)
+   Cambia el color del botón "Volver arriba" al pasar el cursor sobre él */
+.toptop:hover {
+    color: #001D2D;
+}
+
+/* FORMULARIO DE CONTACTO*/
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00669F;
+    box-shadow: 0px 0px 2px 1px #0000004D;
+    border-radius: 45px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 750px; /* Ancho máximo en monitores */
+    margin: 20px auto; /* Centrado horizontal automático */
+    color: #FFFFFF;
+}
+
+form h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+form p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+form label {
+    font-size: 15px;
+}
+
+.input-form {
+    background-color: #FFFFFF;
+    border: 1.53px solid #0000001A;
+    border-radius: 15px;
+    height: 40px;
+    width: 90%;
+}
+
+.textarea-form {
+    background-color: #FFFFFF;
+    border: 1.53px solid #0000001A;
+    border-radius: 15px;
+    height: 50%;
+    width: 90%;
+    padding: 5px;
+}
+
+.form-col {
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-columnas {
+    display: flex;
+    flex-direction: column; /* Organiza los campos verticalmente */
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 40%;
+}
+
+.file-form {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.check-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-form {
+    width: 100%;
+    max-width: 350px;
+    background-color: #1CD1B0;
+    height: 65px;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* PSEUDOSELECTOR (:hover)
+   Aplica estilo al botón de envío del formulario al pasar el cursor sobre él */
+.btn-form:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+
+/* PIE DE PÁGINA (FOOTER)*/
+
+footer {
+    text-align: left;
+    background-color: #005677;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.pie-pagina {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pie-pagina span {
+    width: 100%;
+    text-align: center;
+    color: #FFF9F9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pie-pagina img {
+    position: absolute;
+    right: 30px;
+    width: 130px;
+}
+
+/* DISEÑO RESPONSIVO (MEDIA QUERIES)   */
+
+/* Adaptación para Pantallas Medianas / Tablets (hasta 768px) */
+@media (max-width: 768px) {
+    .formulario {
+        width: 85%;
+    }
+
+    .toptop {
+        font-size: 45px;
+        right: 3px;
+    }
+
+    .pie-pagina span {
+        font-size: 14px;
+    }
+
+    .pie-pagina img {
+        width: 110px;
+    }
+}
+
+/* Adaptación para Pantallas Pequeñas / Smartphones (hasta 480px) */
+@media (max-width: 480px) {
+    .top-nav {
+        font-size: 12px;
+        height: 5px;
+        padding: 5px;
+        padding-bottom: 16px;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .form h2 {
+        font-size: 35px;
+    }
+
+    .form p {
+        font-size: 10px;
+    }
+
+    .form-col {
+        flex-direction: column; /* Pasa el formulario a una sola columna */
+        align-content: space-around;
+    }
+
+    .form-columnas {
+        width: 80%; /* Expande las columnas para abarcar la pantalla móvil */
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .btn-form {
+        font-size: 25px;
+        max-width: 250px;
+    }
+
+    .pie-pagina span {
+        font-size: 10px;
+    }
+
+    .pie-pagina img {
+        width: 80px;
+        position: inherit; /* Cancela el posicionamiento absoluto en móviles */
+    }
+
+    .pie-pagina {
+        padding-left: 10px;
+    }
+
+    .toptop {
+        font-size: 35px;
+        right: 3px;
+    }
+}

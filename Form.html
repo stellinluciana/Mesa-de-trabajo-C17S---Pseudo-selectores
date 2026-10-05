@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Estilos CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- Tipografía Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrermpolicy="no-referrer"
+    />
+
+    <title>Hero-Cards | Agregar Personaje</title>
+  </head>
+  <body>
+    <!-- ENCABEZADO Y MENU DE NAVEGACION -->
+    <header>
+      <div><p class="top-nav">Descuentos 20%</p></div>
+      <div class="menu-nav">
+        <div class="logo">
+          <img src="img/LogoTienda.svg" alt="Logo de la tienda" />
+          <div class="nombre-local">
+            <span class="logo-texto-uno">Nombre Tienda</span>
+          </div>
+        </div>
+        <nav>
+          <ul class="contenedor-menu">
+            <!-- Enlaces entre páginas -->
+            <li><a class="menu" href="index.html">Contacto / Inicio</a></li>
+            <li><a class="menu" href="form.html">Registrarme</a></li>
+            <li><a class="menu" href="#">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SECCION PRINCIPAL: FORMULARIO DE REGISTRO -->
+    <main>
+      <section>
+        <!-- Configuración del envío hacia index.html -->
+        <form class="formulario" action="index.html" method="get">
+          <div>
+            <h2>¡Añadí tu súper!</h2>
+            <p class="subtitulo">Agregá tu personaje favorito completando las opciones.</p>
+          </div>
+          
+          <div class="form-col">
+            <!-- Columna 1: Datos básicos -->
+            <div class="form-columnas">
+              <label for="nombre">*Nombre</label>
+              <input type="text" name="nombre" id="nombre" class="input-form" placeholder="Ej: Batman" required />
+
+              <label for="fecha">Fecha de aparición</label>
+              <input type="date" name="fecha" id="fecha" class="input-form" />
+
+              <label for="descripcion">Descripción</label>
+              <textarea name="descripcion" id="descripcion" class="textarea-form" placeholder="Escribe una breve descripción..."></textarea>
+            </div>
+
+            <!-- Columna 2: Especie, Foto, Poderes y Tipo -->
+            <div class="form-columnas">
+              <label for="especie">*Especie</label>
+              
+              <select name="especie" id="especie" class="input-form" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="humano">Humano</option>
+                <option value="alienigena">Alienífena</option>
+                <option value="mutante">Mutante</option>
+                <option value="androide">Androide / Robot</option>
+              </select>
+
+              <label for="foto">Agregar Foto</label>
+              <input type="file" name="foto" id="foto" class="file-form" accept="image/*" />
+
+              <!-- Opciones múltiples -->
+              <div class="check-radio">
+                <p>Poderes</p>
+                <div>
+                  <input type="checkbox" id="volar" name="poderes" value="volar" />
+                  <label for="volar">Volar</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="superinteligencia" name="poderes" value="superinteligencia" />
+                  <label for="superinteligencia">SuperInteligencia</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="rayo-laser" name="poderes" value="rayo-laser" />
+                  <label for="rayo-laser">Vista de rayo láser</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="billetera" name="poderes" value="billetera" />
+                  <label for="billetera">Billetera gorda</label>
+                </div>
+              </div>
+
+              <hr />
+
+              <!-- Selección única con IDs corregidos para evitar duplicados -->
+              <div class="check-radio">
+                <p>Tipos de Personajes</p>
+                <div>
+                  <input type="radio" name="tipos" value="heroe" id="tipo-heroe" />
+                  <label for="tipo-heroe">Héroe / Heroína</label>
+                </div>
+                <div>
+                  <input type="radio" name="tipos" value="villano" id="tipo-villano" />
+                  <label for="tipo-villano">Villano / Villana</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón para procesar y enviar -->
+          <button class="btn-form" type="submit">Añadir</button>
+        </form>
+      </section>
+
+      <div><i class="fa-solid fa-circle-plus toptop"></i></div>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+      <div class="pie-pagina">
+        <span>Todos los derechos reservados a TALLER DE DISEÑO WEB</span>
+        <img src="img/Vector.png" alt="Github" />
+      </div>
+    </footer>
+  </body>
+</html>
